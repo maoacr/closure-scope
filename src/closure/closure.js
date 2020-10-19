@@ -24,3 +24,16 @@ let myMoneyBox = Box();
 myMoneyBox(4);
 myMoneyBox(6);
 myMoneyBox(10);
+
+
+function crearContador() {
+  let contador = 0;
+
+  return function incrementar() {
+    contador += 1;
+    return contador;
+  };
+
+}
+
+const counter = crearContador();
